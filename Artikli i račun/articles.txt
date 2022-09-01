@@ -1,0 +1,9 @@
+food apple 5
+clothes shirt 7
+food bread 9
+drink water 9
+drink milk 6
+clothes dress 3
+furniture desk 5
+drink juice 4
+food pasta 7

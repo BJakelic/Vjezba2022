@@ -1,0 +1,8 @@
+clothes shirt 2
+food bread 2
+clothes dress 5
+drink juice 2
+drink milk 2
+food apple 9
+food bread 1
+drink juice 1
