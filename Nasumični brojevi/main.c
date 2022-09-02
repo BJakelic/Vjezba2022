@@ -1,3 +1,8 @@
+/*
+Napisati program koji generira 30 slučajnih brojeva u opsegu od 0 do 100 i od generiranih brojeva gradi vezanu listu. Ispisati listu.
+Izbaciti iz liste sve one brojeve koji su djeljivi s 3 ili imaju znamenku 3 i rezultantnu listu upisati u datoteku u sortiranom redoslijedu
+od najmanjeg do najvećeg broja (sama lista ne smije se sortirati prije upisa u datoteku).
+*/
 #define _CRT_SECURE_NO_WARNINGS
 #include "functions.h"
 
