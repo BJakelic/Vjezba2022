@@ -5,6 +5,9 @@ int main()
 {
     Student head = {.name = {0}, .surname = {0}, .id = 0, .next = NULL};
     
+    time_t t;
+    srand((unsigned)time(&t));
+    
     Read("file.txt", &head);
     
     Print(&head);
@@ -12,8 +15,6 @@ int main()
     RemoveByName(&head);
     
     Print(&head);
-    
-    Student head2 = {.name = {0}, .surname = {0}, .id = 0, .next = NULL};
     
     FindDivisible(&head);
     
