@@ -32,8 +32,6 @@ int Read(char fileName[], StudP head)
 
 StudP CreateNew(char name[], char surname[])
 {
-    static i = 2;
-    static j = 7;
     int grade = 0;
     
     StudP new = NULL;
@@ -44,17 +42,12 @@ StudP CreateNew(char name[], char surname[])
         return NULL;
     }
     
-    srand(time(0));
-    
-    grade = (rand() + (j/i) - (j*i)) % 5 + 1;
+    grade = rand() % 5 + 1;
     
     strcpy(new->name, name);
     strcpy(new->surname, surname);
     new->grade = grade;
     new->next = NULL;
-    
-    i++;
-    j++;
     
     return new;
 }
