@@ -38,15 +38,12 @@ StudentP CreateNewElement(char name[], char surname[])
         return NULL;
     }
     
-    static id = 100;
-    if(id > 199)
-    {
-        return NULL;
-    }
+    int id = 0;
+    id = rand() % 100 + 100;
     
     strcpy(new->name, name);
     strcpy(new->surname, surname);
-    new->id = id++;
+    new->id = id;
     new->next = NULL;
     
     return new;
@@ -56,6 +53,7 @@ int Insert(StudentP head, StudentP new)
 {
     StudentP temp = NULL;
     temp = head;
+    int id = new->id;
     
     while(temp->next && temp->next->id < new->id)
     {
