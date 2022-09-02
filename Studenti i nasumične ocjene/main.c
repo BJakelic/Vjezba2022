@@ -5,6 +5,9 @@ int main()
 {
     Stud head = {.name = {0}, .surname = {0}, .grade = 1, .next = NULL};
     
+    time_t t;
+    srand((unsigned)time(&t));
+    
     Read("students.txt", &head);
     
     Print(&head);
