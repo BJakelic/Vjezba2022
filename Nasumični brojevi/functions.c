@@ -13,19 +13,11 @@ int CreateNew(NumberP head)
     }
     
     int n = 0;
-    static x = 2;
-    static y = 7;
-    int i = 0;
     
-    srand(time(0));
-    
-    n = (rand() + (y/x) - (y*x)) % 100;
+    n = rand() % 100;
     new->number = n;
     new->next = NULL;
     Insert(head, new);
-    
-    x++;
-    y++;
     
     return EXIT_SUCCESS;
 }
